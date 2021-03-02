@@ -1,0 +1,31 @@
+.asr-checkbox {
+    border: 2px solid rgba(70, 156, 183, 0.2);
+    border-radius: 22px;
+    width: 42px;
+    height: 24px;
+    cursor: pointer;
+    position: relative;
+    display: block;
+
+    input[type=checkbox] {
+        display: none;
+    }
+
+    .checkbox__circle {
+        display: block;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: rgba(70, 156, 183, 0.2);
+        position: absolute;
+        top: 50%;
+        left: 4px;
+        transform: translateY(-50%);
+        transition: .2s;
+    }
+
+    input[type=checkbox]:checked ~ .checkbox__circle {
+        left: calc(100% - 20px);
+        background: #469CB7;
+    }
+}

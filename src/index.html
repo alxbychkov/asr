@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Синтез речи NLab Speech</title>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body class="body">
+    @@include('templates/header.html', {"page": "Распознование", "link": "recognition.html"})
+    <main class="main">
+        @@include('templates/title.html', {
+            "title": "Синтез речи NLab Speech",
+            "subtitle": "Выберите голос, введите текст и нажмите Enter. Вы также можете настроить тон, скорость и громкость."
+        })
+        @@include('templates/components/button.html')
+        @@include('templates/components/track_small.html')
+        @@include('templates/components/checkbox.html', {"name": "name1"})
+        @@include('templates/asr-result.html')
+    </main>
+</body>
+</html>

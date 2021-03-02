@@ -1,0 +1,37 @@
+@import 'vars';
+@import 'fonts';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.body {
+    font-family: 'Jost', sans-serif;
+    font-style: normal;
+    background-color: #E5E5E5;
+    height: 100vh;
+}
+
+@import 'header';
+
+.main {
+    height: 100%;
+    padding: 0 15px;
+}
+
+@import 'title';
+@import 'button';
+@import 'track';
+@import 'checkbox';
+@import 'asr-result';

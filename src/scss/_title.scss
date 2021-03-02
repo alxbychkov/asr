@@ -1,0 +1,25 @@
+.page__title {
+    padding: 18px 0;
+    display: flex;
+    justify-content: center;
+    .title__wrapper {
+        width: min-content;
+    }
+    .title {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 46px;
+        text-align: center;
+        color: #16193B;
+        white-space: nowrap;
+    }
+    .subtitle {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: hsla(235, 46%, 16%, 0.6);
+        max-width: 528px;
+        margin: 10px auto 0;
+    }
+}
