@@ -1,0 +1,43 @@
+<div class="asr">
+    <form action="" class="asr__form">
+        <div class="form__btn">
+            @@include('components/button.html')
+        </div>
+        <div class="asr__drop__wrapper">
+            <div class="asr__drop">
+                <input type="file" name="file" id="file" class="asr_drop_file">
+                <div class="drop__overlay">
+                    <p class="overlay__text">Нажмите сюда<br>или перетащите файл</p>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzQiIHZpZXdCb3g9IjAgMCAzNiAzNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI2Ljk5OTUgMTEuNTk5OEgyMS41OTk1VjAuNzk5ODA1SDE0LjM5OTVWMTEuNTk5OEg4Ljk5OTUzTDE3Ljk5OTUgMjAuNTk5OEwyNi45OTk1IDExLjU5OThaTTM0LjgwNzkgMjMuMzU3NEMzNC40Mjk5IDIyLjk1NDIgMzEuOTA4MSAyMC4yNTYgMzEuMTg4MSAxOS41NTIyQzMwLjY4MzYgMTkuMDY4NSAzMC4wMTE0IDE4Ljc5ODkgMjkuMzEyNSAxOC43OTk4SDI2LjE0OTlMMzEuNjY1MSAyNC4xODlIMjUuMjg1OUMyNS4xOTkyIDI0LjE4NzQgMjUuMTEzNiAyNC4yMDg3IDI1LjAzNzggMjQuMjUwN0MyNC45NjIgMjQuMjkyOCAyNC44OTg1IDI0LjM1NCAyNC44NTM5IDI0LjQyODRMMjMuMzg1MSAyNy43OTk4SDEyLjYxMzlMMTEuMTQ1MSAyNC40Mjg0QzExLjEwMDIgMjQuMzU0MyAxMS4wMzY4IDI0LjI5MzIgMTAuOTYxIDI0LjI1MTJDMTAuODg1MiAyNC4yMDkyIDEwLjc5OTggMjQuMTg3OCAxMC43MTMxIDI0LjE4OUg0LjMzMzkzTDkuODQ3MzMgMTguNzk5OEg2LjY4NjUzQzUuOTcxOTMgMTguNzk5OCA1LjI4OTczIDE5LjA4NiA0LjgxMDkzIDE5LjU1MjJDNC4wOTA5MyAyMC4yNTc4IDEuNTY5MTMgMjIuOTU2IDEuMTkxMTMgMjMuMzU3NEMwLjMxMDkyNiAyNC4yOTUyIC0wLjE3MzI3NCAyNS4wNDIyIDAuMDU3MTI2MyAyNS45NjU2TDEuMDY2OTMgMzEuNDk4OEMxLjI5NzMzIDMyLjQyNCAyLjMxMDczIDMzLjE4MzYgMy4zMjA1MyAzMy4xODM2SDMyLjY4MjFDMzMuNjkxOSAzMy4xODM2IDM0LjcwNTMgMzIuNDI0IDM0LjkzNTcgMzEuNDk4OEwzNS45NDU1IDI1Ljk2NTZDMzYuMTcyMyAyNS4wNDIyIDM1LjY4OTkgMjQuMjk1MiAzNC44MDc5IDIzLjM1NzRaIiBmaWxsPSIjMTYxOTNCIi8+Cjwvc3ZnPgo=" class="overlay__upload" alt="upload">
+                </div>
+            </div>
+        </div>
+        <div class="asr__btns">
+            <div class="asr__btn__item">@@include('components/checkbox.html', {"name": "name1", "value": "Перевод чисел"})</div>
+            <div class="asr__btn__item">@@include('components/checkbox.html', {"name": "name2", "value": "Пунктуация"})</div>
+            <div class="asr__btn__item">@@include('components/checkbox.html', {"name": "name3", "value": "Перевод англоязычных названий"})</div>
+            <div class="asr__btn__item">@@include('components/checkbox.html', {"name": "name4", "value": "Соблюдение верхнего регистра"})</div>
+            <div class="asr__btn__item">@@include('components/checkbox.html', {"name": "name5", "value": "Мат"})</div>
+            <div class="asr__btn__item">@@include('components/checkbox.html', {"name": "name6", "value": "Интервалы распознаваний"})</div>
+        </div>
+        <div class="asr__codec">
+            <div class="codec__item kgc">
+                <p class="codec__title">кГц</p>
+                <div class="codec__values">
+                    <button type="text" class="codec__value active" value="16000">16000</button>
+                    <button type="text" class="codec__value" value="8000">8000</button>
+                </div>
+            </div>
+            <div class="codec__item decoder">
+                <p class="codec__title">Декодер</p>
+                <div class="codec__values">
+                    <button class="codec__value" value="Жадный">Жадный</button>
+                    <button class="codec__value active" value="Trie">Trie</button>
+                </div>
+            </div>
+        </div>
+        <div class="asr__girl">
+            <img src="img/girl.png" alt="girl">
+        </div>
+    </form>
+</div>
