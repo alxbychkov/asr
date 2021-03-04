@@ -1,0 +1,25 @@
+.asr_content {
+    max-width: 1356px;
+    margin: 45px auto 0;
+    display: flex;
+    justify-content: space-between;
+
+    .asr_content__item {}
+
+    .asr_content__item.leftside {
+        width: 36%;
+
+        .asr {
+            margin: 0;
+        }
+
+        .asr .asr__girl {
+            top: -26%;
+            left: 16px;
+        }
+    }
+
+    .asr_content__item.rightside {
+        width: 68%;
+    }
+}

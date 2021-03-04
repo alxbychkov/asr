@@ -21,6 +21,7 @@ ul {
     font-style: normal;
     background-color: #E5E5E5;
     height: 100vh;
+    overflow: hidden;
 }
 
 @import 'header';
@@ -36,3 +37,5 @@ ul {
 @import 'checkbox';
 @import 'asr-result';
 @import 'asr';
+@import 'asr-filter';
+@import 'asr-content';

@@ -1,0 +1,38 @@
+.asr-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    .asr-filter__input::placeholder {
+        font-family: 'Jost', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 23px;
+        color: rgba(22, 25, 59, 0.4);
+    }
+
+    .asr-filter__input {
+        flex: 1;
+        margin-right: 10px;
+    }
+    .asr-filter__input,
+    .asr-filter__btn {
+        background: #FFFFFF;
+        border: 1px solid rgba(70, 156, 183, 0.2);
+        border-radius: 6px;
+        padding: 10px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 23px;
+        color: rgba(22, 25, 59, 0.6);
+    }
+
+    .asr-filter__btn {
+        cursor: pointer;
+    }
+
+    .asr-filter__btn:not(:last-child) {
+        margin-right: 10px;
+    }
+}

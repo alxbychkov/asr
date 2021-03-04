@@ -14,7 +14,20 @@
             "title": "Синтез речи NLab Speech",
             "subtitle": "Выберите голос, введите текст и нажмите Enter. Вы также можете настроить тон, скорость и громкость."
         })
-        @@include('templates/asr.html')
+        
+        <section class="asr_content">
+            <div class="asr_content__item leftside">
+                @@include('templates/asr.html')
+            </div>
+            <div class="asr_content__item rightside">
+                @@include('templates/components/asr-filter.html')
+                @@include('templates/asr-result.html', {"interval": "", "text1": "<p>в чащах юга жил-был цитрус в чащах юга жил-был цитрусв чащах юга жил-был цитрусв чащах<span class='interval__time'></span></p>", "text2": "<p>в чащах юга жил-был цитрус в чащах юга жил-был цитрусв чащах юга жил-был цитрусв чащахв чащах юга жил-был цитрус в чащах юга жил-был цитрусв чащах юга жил-был цитрусв чащахв чащах юга жил-был цитрус в чащах юга жил-был цитрусв чащах юга жил-был цитрусв чащахв чащах юга жил-был цитрус в чащах юга жил-был цитрусв чащах юга жил-был цитрусв чащах<span class='interval__time'></span></p>"})
+                @@include('templates/asr-result.html', {"interval": "interval", "text1": "<p>в чащах юга жил-был цитрус в чащах юга<span class='interval__time'>00:00:00-00:00:03</span></p><p>в чащах юга жил-был цитрус в чащах юга</p>", "text2": "<p>в чащах юга жил-был цитрус в чащах юга жил-был цитрусв чащах юга жил-был цитрусв чащах<span class='interval__time'></span></p>"})
+                @@include('templates/asr-result.html', {"interval": "", "text1": "<p>в чащах юга жил-был цитрус в чащах юга<span class='interval__time'></span></p><p>в чащах юга жил-был цитрус в чащах юга</p>", "text2": "<p>в чащах юга жил-был цитрус в чащах юга жил-был цитрусв чащах юга жил-был цитрусв чащах<span class='interval__time'></span></p>"})
+            </div>
+        </section>
+
+        
 
         @@include('templates/components/button.html')
         @@include('templates/components/track_small.html')
