@@ -1,0 +1,27 @@
+<div class="tts">
+    <div class="tts-textarea">
+        <textarea name="string" id="string" placeholder="Введите текст"></textarea>
+        @@include('components/elisa.html')
+    </div>
+    <div class="tts-sidebar">
+        <div class="tts__header">
+            <div class="tts__avatar active">
+                <img src="../img/face_1.png" alt="face_1" class="tts__picture">
+                <p class="tts__name">Наташа</p>
+            </div>
+            <div class="tts__avatar">
+                <img src="../img/face_2.png" alt="face_1" class="tts__picture">
+                <p class="tts__name">Руслан</p>
+            </div>
+            <div class="tts__avatar active">
+                <img src="../img/face_3.png" alt="face_1" class="tts__picture">
+                <p class="tts__name">Екатерина</p>
+            </div>
+        </div>
+        <div class="tts__body">
+            @@include('components/scrollbox.html', {"name": "Тон"})
+            @@include('components/scrollbox.html', {"name": "Скорость"})
+            @@include('components/scrollbox.html', {"name": "Громкость"})
+        </div>
+    </div>
+</div>

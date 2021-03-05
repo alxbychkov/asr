@@ -36,7 +36,63 @@ ul {
 @import 'track';
 @import 'checkbox';
 @import 'asr-result';
+@import 'tts-result';
 @import 'asr';
+@import 'tts';
 @import 'asr-filter';
 @import 'asr-content';
 @import 'error-window';
+@import 'scrollbox';
+
+.tts_start {
+    max-width: 1356px;
+    margin: 88px auto 24px;
+    transition: .3s;
+}
+
+.tts_content {
+    max-width: 1356px;
+    margin: auto;
+    height: 0;
+    opacity: 0;
+    transition: .3;
+
+    .tts_content__item {
+        overflow-y: auto;
+        height: 100%;
+        padding-right: 7px;
+
+        &::-webkit-scrollbar-thumb {
+            background: #FFFFFF;
+            border: 1px solid rgba(70, 156, 183, 0.5);
+            box-sizing: border-box;
+            box-shadow: 0px 19px 65px -11px rgba(6, 33, 39, 0.08);
+            border-radius: 6px;
+            
+        }
+        
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+            height: 100px;
+        }
+
+        &::-webkit-scrollbar {
+            width: 12px;
+        }
+        
+        .tts-result:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.main.open {
+    .tts_start {
+        margin-top: 10px;
+    }
+
+    .tts_content {
+        opacity: 1;
+        height: calc(100vh - 71px - 128px - 257px - 35px);
+    }
+}
