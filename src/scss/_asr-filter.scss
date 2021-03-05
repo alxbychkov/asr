@@ -30,6 +30,13 @@
 
     .asr-filter__btn {
         cursor: pointer;
+        transition: .3s;
+
+        &.active,
+        &:hover,
+        &:active {
+            border-color: #469CB7;
+        }
     }
 
     .asr-filter__btn:not(:last-child) {

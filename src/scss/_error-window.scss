@@ -1,0 +1,48 @@
+.error-window {
+    background: #FFFFFF;
+    border: 1px solid rgba(70, 156, 183, 0.2);
+    box-shadow: 0px 19px 65px -11px rgba(6, 33, 39, 0.08);
+    border-radius: 6px;
+    position: relative;
+    top: 20%;
+    margin: auto;
+    max-width: 340px;
+    padding: 62px 101px 32px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+
+    .error__text {
+        text-align: center;
+        color: #000000;
+        white-space: nowrap;
+    }
+
+    .error__btn {
+        background: #FFFFFF;
+        border: 1px solid rgba(70, 156, 183, 0.2);
+        border-radius: 6px;
+        padding: 10px;
+        display: block;
+        width: min-content;
+        margin: 16px auto 0;
+        transition: .3s;
+
+        &:hover,
+        &:active {
+            border-color: #469CB7;
+        }
+    }
+
+    .asr__girl {
+        position: absolute;
+        top: -121px;
+        left: 20px;
+        z-index: -1;
+    }
+    .asr__heands {
+        position: absolute;
+        top: -9px;
+        left: 46px;
+    }
+}
