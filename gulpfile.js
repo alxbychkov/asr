@@ -64,6 +64,11 @@ function images() {
             .pipe(dest('dist/img'))
 }
 
+function copy() {
+    return src('src/media/**/*.*')
+            .pipe(dest('dist/media'))
+}
+
 function scss() {
     return src('src/scss/**.scss')
             .pipe(sass())
@@ -99,5 +104,5 @@ function serve(){
     watch('src/js/**.js',series(js)).on('change',sync.reload)
 }
 
-exports.build = series(clear,fonts,scss,js,images,html)
-exports.serve = series(clear,fonts,scss,js,images,html,serve)
+exports.build = series(clear,fonts,scss,js,images,copy,html)
+exports.serve = series(clear,fonts,scss,js,images,html,copy,serve)
