@@ -46,3 +46,43 @@
         left: 46px;
     }
 }
+
+.error-msg.asr__error {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+    .error__img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+    }
+}
+
+.error-msg.tts__error {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+
+    .error__img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+    }
+
+    .error__img.left {
+        left: 0;
+    }
+
+    .error__img.right {
+        right: 0;
+    }
+}

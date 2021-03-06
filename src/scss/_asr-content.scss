@@ -29,19 +29,11 @@
     justify-content: space-between;
     height: calc(100vh - 71px - 128px - 65px);
 
-    .asr_content__item {}
-
     .asr_content__item.leftside {
-        // width: 36%;
-
-        // .asr {
-        //     margin: 0;
-        // }
-
         .asr .asr__girl {
             top: 10%;
             left: -110px;
-            transition: .3s;
+            transition: .7s;
         }
 
         .asr .asr__heands {
@@ -55,7 +47,7 @@
     .asr_content__item.leftside {
         width: 100%;
         margin-top: 10px;
-        transition: .3s;
+        transition: .7s;
 
         .asr {
             margin: auto;
@@ -69,6 +61,7 @@
     .asr_content__item.rightside {
         width: 68%;
         overflow: hidden;
+        transition: .7s;
     }
 
     .asr_content__body {

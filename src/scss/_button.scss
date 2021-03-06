@@ -42,3 +42,60 @@
     content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCAzNiA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yNi44Mjk2IDIyLjk0MDhDMjYuODI5NiAyNy45MDIzIDIyLjg2OTUgMzEuOTM3MiAxOCAzMS45MzcyQzEzLjEzMDUgMzEuOTM3MiA5LjE3MDM4IDI3LjkwMjMgOS4xNzAzOCAyMi45NDA4VjkuNDQ2MzdDOS4xNzMzOCA3LjEzNDQyIDEwLjA0ODUgNC45MTIxMiAxMS42MTQ4IDMuMjM5MjZDMTMuMTM3OSAxLjYxMjUzIDE1LjIwMTEgMC42MjY0MzEgMTcuMzk3OCAwLjQ3MDMzMkMxNy41MjIyIDAuNDYxNDkxIDE3LjY0NTYgMC40NDE1MTggMTcuNzY5MSAwLjQyMzY1MUMxNy44NjA5IDAuNDEwMzY2IDE3Ljk1MzUgMC40MDM0IDE4LjA0NjMgMC40MDI4MzJDMjIuODg5NCAwLjQwMjgzMiAyNi44Mjk2IDQuNDYwMTcgMjYuODI5NiA5LjQ0NjM3VjIyLjk0MDhaTTE3Ljc5MjMgNDkuNTk2NEMxNi42ODc4IDQ5LjU5NjQgMTUuNzkyMyA0OC43MDEgMTUuNzkyMyA0Ny41OTY0VjQyLjM3ODlDMTUuNzkyMyA0MS4zNzA3IDE1LjAzNzggNDAuNTMyMyAxNC4wNTUyIDQwLjMwNzFDNi44NDU0NiAzOC42NTQ0IDEuMjk5NTUgMzIuNTg1MiAwLjQ1MjgxNiAyNS4xMDQ0QzAuMzI4NTg2IDI0LjAwNjggMS4yMzU5NCAyMy4xMDc1IDIuMzQwNTEgMjMuMTA3NUgyLjc1NTMyQzMuODU5ODkgMjMuMTA3NSA0LjczOTQzIDI0LjAwODMgNC45MDQ4NiAyNS4xMDA0QzUuODY4NTIgMzEuNDYyMyAxMS4zNzI3IDM2LjM1MiAxNy45OTk3IDM2LjM1MkMyNC42MjY4IDM2LjM1MiAzMC4xMzEgMzEuNDYyMyAzMS4wOTQ2IDI1LjEwMDRDMzEuMjYwMSAyNC4wMDgzIDMyLjEzOTYgMjMuMTA3NSAzMy4yNDQyIDIzLjEwNzVIMzMuNjU5QzM0Ljc2MzUgMjMuMTA3NSAzNS42NzA5IDI0LjAwNjggMzUuNTQ2NyAyNS4xMDQ0QzM0LjcwMDEgMzIuNTg2OCAyOS4xNTQyIDM4LjY1NDYgMjEuOTQ0MyA0MC4zMDcxQzIwLjk2MTcgNDAuNTMyMyAyMC4yMDcxIDQxLjM3MDcgMjAuMjA3MSA0Mi4zNzg5VjQ3LjU5NjRDMjAuMjA3MSA0OC43MDEgMTkuMzExNyA0OS41OTY0IDE4LjIwNzEgNDkuNTk2NEgxNy43OTIzWiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==);
 
 }
+
+.asr-btn .spinner {
+    display: none;
+}
+
+.asr-btn.asr-btn-loading::after {
+    content: none;
+}
+.asr-btn-loading {
+    .spinner {
+        display: block;
+    }
+
+    .spinner {
+        animation: rotate 2s linear infinite;
+        z-index: 2;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -30px 0 0 -30px;
+        width: 60px;
+        height: 60px;
+        
+        & .path {
+          stroke: url(#paint0_linear);
+          stroke-linecap: round;
+          animation: dash 1.5s ease-in-out infinite;
+        } 
+    }
+
+    &:hover {
+        & .path {
+            stroke: #FFFFFF;
+          }         
+    }
+      
+      @keyframes rotate {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      
+      @keyframes dash {
+        0% {
+          stroke-dasharray: 1, 150;
+          stroke-dashoffset: 0;
+        }
+        50% {
+          stroke-dasharray: 90, 150;
+          stroke-dashoffset: -34;
+        }
+        100% {
+          stroke-dasharray: 90, 150;
+          stroke-dashoffset: -124;
+        }
+      }
+}
