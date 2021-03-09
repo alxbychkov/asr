@@ -61,11 +61,16 @@
             }
 
             .asr-result__text{
+                display: none;
                 color: #16193B;
                 p {
                     display: flex;
                     justify-content: space-between;
                 }
+            }
+
+            &.open .asr-result__text {
+                display: block;
             }
         }
     }

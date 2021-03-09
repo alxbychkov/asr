@@ -3,13 +3,13 @@
         @@include('components/track_small.html')
         <p class="interval__text asr-result__title">Интервал</p>
     </div>
-    <div class="asr-result__body">
+    <div class="asr-result__body" data-type="body">
         <div class="asr-result__body__item">
-            <p class="asr-result__title">Распознанный текст</p>
+            <p class="asr-result__title" data-type="open">Распознанный текст</p>
             <div class="asr-result__text">@@text1</div>
         </div>
         <div class="asr-result__body__item open">
-            <p class="asr-result__title">Фильтрованный текст</p>
+            <p class="asr-result__title"  data-type="open">Фильтрованный текст</p>
             <div class="asr-result__text">@@text2</div>
         </div>
     </div>

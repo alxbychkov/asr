@@ -1,9 +1,12 @@
-<div class="track track__small">
-    <div class="track__play track__item"></div>
-    <div class="track__road track__item"></div>
-    <div class="track__item volume open">
-        <div class="volume__road"></div>
-        <div class="track__volume"></div>
+<div class="track track__small" data-type="player">
+    <audio src="media/9094175.mp3" preload="metadata" data-id="audio"></audio>
+    <div class="track__play track__item" data-type="btn"></div>
+    <div class="track__road track__item" data-type="track">
+        <div class="track__road__fill track__item" data-type="track_fill"></div>
     </div>
-    <div class="track__download track__item"></div>
+    <div class="track__item volume open">
+        <div class="volume__road" data-type="volume_road"></div>
+        <div class="track__volume" data-type="volume"></div>
+    </div>
+    <a href="media/9094175.mp3" class="track__download track__item" download data-type="download"></a>
 </div>

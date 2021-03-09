@@ -24,6 +24,7 @@
             position: relative;
             box-shadow: inset -40px 0 #fff;
             cursor: pointer;
+            // transition: .3s;
 
             .scrollbox__btn {
                 width: 31px;
@@ -40,6 +41,8 @@
                 line-height: 17px;
                 color: rgba(22, 25, 59, 0.6);
                 cursor: pointer;
+                // transition: .3s;
+                text-align: center;
             }
         }
 
