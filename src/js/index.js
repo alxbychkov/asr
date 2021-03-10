@@ -40,7 +40,17 @@ if (volume) {
     volume.forEach(i => {
         i.addEventListener('click', e => {
             const btn = e.target
-            !btn.classList.contains('mute') ? btn.classList.add('mute') : btn.classList.remove('mute') 
+            const volumeInput = btn.parentNode.querySelector('[data-type=volume_range]')
+            const volumeValue = volumeInput.value
+
+            if (!btn.classList.contains('mute')) {
+                btn.classList.add('mute')
+                volumeInput.dataset.volume = volumeInput.value
+                volumeInput.value = 0
+            } else {
+                btn.classList.remove('mute')
+                volumeInput.value = volumeInput.dataset.volume
+            } 
         })
     })
 }

@@ -25,8 +25,12 @@ if (scrollbox.length !== 0) {
         })
 
         trackBtn.addEventListener('mouseup', e => {
-            document.removeEventListener('mousemove', listener);
+            document.removeEventListener('mousemove', listener)
         });
+
+        trackBtn.addEventListener('mouseover', e => {
+            document.removeEventListener('mousemove', listener)
+        })
 
         const listener = e => {
             const posX = e.pageX
@@ -34,9 +38,12 @@ if (scrollbox.length !== 0) {
             const trackPercent = 100 - (trackPosWidth - posX) / trackWidth * 100
             const leftPos = 125 * trackPercent / 100 - 1
             const textPos = 24 * trackPercent / 100 - 12
-            trackBtn.style.left = Math.floor(leftPos) + 'px'
-            trackBtn.innerHTML = textPos.toFixed(1)
-            track.style.boxShadow = `inset ${-150 + Math.floor(leftPos) + 25}px 0 rgb(255,255,255)`
+
+            if (posX >= track.getBoundingClientRect().x && posX <= trackPosWidth) {
+                trackBtn.style.left = Math.floor(leftPos) + 'px'
+                trackBtn.innerHTML = textPos.toFixed(1)
+                track.style.boxShadow = `inset ${-150 + Math.floor(leftPos) + 25}px 0 rgb(255,255,255)`
+            }
         };
     })
 }
