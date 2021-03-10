@@ -14,7 +14,8 @@
 
     .scrollbox {
         margin-top: 3px;
-
+        user-select: none;
+        
         .scrollbox__track {
             background: rgba(70, 156, 183, 0.2);
             border: 1px solid rgba(70, 156, 183, 0.5);

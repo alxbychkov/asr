@@ -36,7 +36,7 @@ if (scrollbox.length !== 0) {
             const posX = e.pageX
             const trackPosWidth = track.getBoundingClientRect().x + trackWidth
             const trackPercent = 100 - (trackPosWidth - posX) / trackWidth * 100
-            const leftPos = 125 * trackPercent / 100 - 1
+            const leftPos = 125 * trackPercent / 100
             const textPos = 24 * trackPercent / 100 - 12
 
             if (posX >= track.getBoundingClientRect().x && posX <= trackPosWidth) {

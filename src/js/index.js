@@ -4,6 +4,7 @@ const play = document.querySelectorAll('.track__play')
 const volume = document.querySelectorAll('.track__volume')
 const asrBtn = document.querySelector('.asr-btn')
 const resultBody = document.querySelector('[data-type="content"]')
+const main = document.querySelector('main')
 
 if (asrBtn) {
     asrBtn.addEventListener('click', e => {
@@ -15,6 +16,9 @@ if (asrBtn) {
                 btn.classList.remove('asr-btn-loading')
                 btn.classList.add('asr-btn-pause')
                 openMain()
+                if (main && main.classList.contains('open')) {
+                    elisa.stop()
+                }
             }, 2500)
         } else if (btn.classList.contains('asr-btn-pause')) {
             btn.classList.remove('asr-btn-pause')

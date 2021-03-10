@@ -12,12 +12,19 @@
         }
 
         .asr .asr__girl {
+            // display: block;
             top: -26%;
             left: 16px;
         }
 
         .asr .asr__heands {
             display: block;
+        }
+
+        .media__elisa {
+            top: -95%;
+            left: -150px;
+            transform: scale(0.41);
         }
     }
 }
@@ -34,6 +41,7 @@
             top: 10%;
             left: -110px;
             transition: .7s;
+            display: none;
         }
 
         .asr .asr__heands {
@@ -41,6 +49,15 @@
             position: absolute;
             top: -8px;
             left: 45px;
+        }
+
+        .media__elisa {
+            position: absolute;
+            z-index: -1;
+            top: -57%;
+            left: -275px;
+            transform: scale(0.44);
+            transition: .7s;
         }
     }
 
