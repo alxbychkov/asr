@@ -1,0 +1,55 @@
+p.layer__text {
+    &#top {
+        background: linear-gradient(360deg, #DD85BC 16.78%, #6298B8 88.75%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 400px;
+        transform: rotate(-90deg) translate(50%,65px);
+        z-index: -5;
+
+        &.animate {
+            animation: scroll 120s infinite ease-in-out;
+        }
+    }
+    &#bottom {
+        background: linear-gradient(90deg, #DD85BC 10.57%, #6298B8 116.63%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 200px;
+        opacity: 0.3;
+        transform: rotate(-90deg) translate(50%,38px);
+        z-index: -6;
+
+        &.animate {
+            animation: scrollrevers 120s infinite ease-in-out;
+        }
+    }
+    position: fixed;
+    top: 0;
+    right: -400px;
+    line-height: 1;
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: -0.1em;
+    text-transform: uppercase;
+    transform-origin: bottom right;
+    transition: 3s;
+}
+
+@keyframes scroll {
+    0% {transform: rotate(-90deg) translate(75%,65px);}
+    50% {transform: rotate(-90deg) translate(25%,65px);}
+    100% {transform: rotate(-90deg) translate(75%,65px);}
+}
+
+@keyframes scrollrevers {
+    0% {transform: rotate(-90deg) translate(50%,38px);}
+    50% {transform: rotate(-90deg) translate(125%,38px);}
+    100% {transform: rotate(-90deg) translate(50%,38px);}
+}
+
+main.main.open ~ p.layer__text {
+    right: 0;
+
+}
