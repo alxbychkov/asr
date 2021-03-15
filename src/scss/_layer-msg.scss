@@ -44,9 +44,9 @@ p.layer__text {
 }
 
 @keyframes scrollrevers {
-    0% {transform: rotate(-90deg) translate(50%,38px);}
-    50% {transform: rotate(-90deg) translate(125%,38px);}
-    100% {transform: rotate(-90deg) translate(50%,38px);}
+    0% {transform: rotate(-90deg) translate(25%,38px);}
+    50% {transform: rotate(-90deg) translate(50%,38px);}
+    100% {transform: rotate(-90deg) translate(25%,38px);}
 }
 
 main.main.open ~ p.layer__text {
