@@ -73,8 +73,8 @@ if (resultBody) {
             const html = p.textContent;
             const range = window.getSelection() || document.getSelection();
             const startPos = range.focusOffset;
-            const selectedWord = range.toString().trim();
-            const newHtml = html.substring(0, startPos - selectedWord.length - 1) + "<i class='touched'>" + selectedWord + "</i> " + html.substring(startPos);
+            const selectedWord = range.toString();
+            const newHtml = html.substring(0, startPos - selectedWord.length) + "<i class='touched'>" + selectedWord + "</i>" + html.substring(startPos);
             p.innerHTML = '';
             p.innerHTML = newHtml;
             setTimeout(() => {
