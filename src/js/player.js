@@ -36,9 +36,7 @@ if (player.length !== 0) {
                         currentBtn.classList.contains('mute') ? audioPlayer.muted = true : audioPlayer.muted = false
                     }
                     break;
-                case 'volume_range': {
-                        console.log(currentBtn.value)
-                    }
+                case 'volume_range': {}
                     break;    
                 case 'track': {
                     const trackWidth = currentBtn.getBoundingClientRect().x + currentBtn.getBoundingClientRect().width

@@ -111,6 +111,9 @@ ul {
 }
 
 i.touched {
-    background: rgba(70, 156, 183, 0.2);
+    background: rgba(70, 156, 183, 0.1);
     font-style: normal;
+    &:hover {
+        background: rgba(70, 156, 183, 0.2);
+    }
 }

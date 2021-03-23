@@ -67,18 +67,22 @@ if (resultBody) {
         }
     })
 
-    // resultBody.addEventListener('dblclick', e => {
-    //     if (e.target.tagName === 'P' && e.target.parentNode.dataset.type === 'asr-text') {
-    //         const p = e.target;
-    //         const html = p.innerHTML;
-    //         const range = window.getSelection() || document.getSelection() || document.selection.createRange();
-    //         const startPos = range.focusOffset;
-    //         const selectedWord = range.toString().trim();
-    //         const newHtml = '<span>' + html.substring(0, startPos) + '<i class=\"touched\">' + selectedWord + '</i>' + ' ' + html.substring(startPos + selectedWord.length) + '</span>';
-    //         p.innerHTML = '';
-    //         p.innerHTML = newHtml;
-    //     }
-    // })
+    resultBody.addEventListener('dblclick', e => {
+        if (e.target.dataset.type === 'asr-text') {
+            const p = e.target;
+            const html = p.textContent;
+            const range = window.getSelection() || document.getSelection();
+            const startPos = range.focusOffset;
+            const selectedWord = range.toString().trim();
+            const newHtml = html.substring(0, startPos - selectedWord.length - 1) + "<i class='touched'>" + selectedWord + "</i> " + html.substring(startPos);
+            p.innerHTML = '';
+            p.innerHTML = newHtml;
+            setTimeout(() => {
+                p.innerHTML = '';
+                p.innerHTML = html;
+            },650);
+        }
+    })
 }
 
 function openMain() {
