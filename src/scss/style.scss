@@ -101,3 +101,16 @@ ul {
         height: calc(100vh - 71px - 128px - 257px - 35px);
     }
 }
+
+.media__wave {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    z-index: -20;
+}
+
+i.touched {
+    background: rgba(70, 156, 183, 0.2);
+    font-style: normal;
+}

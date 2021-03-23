@@ -1,4 +1,4 @@
-lottie.loadAnimation({
+const wave = lottie.loadAnimation({
     container: document.querySelector('.media__wave'), // the dom element that will contain the animation
     renderer: 'svg',
     loop: true,

@@ -66,6 +66,19 @@ if (resultBody) {
             body.classList.contains('open') ? body.classList.remove('open') : body.classList.add('open')
         }
     })
+
+    // resultBody.addEventListener('dblclick', e => {
+    //     if (e.target.tagName === 'P' && e.target.parentNode.dataset.type === 'asr-text') {
+    //         const p = e.target;
+    //         const html = p.innerHTML;
+    //         const range = window.getSelection() || document.getSelection() || document.selection.createRange();
+    //         const startPos = range.focusOffset;
+    //         const selectedWord = range.toString().trim();
+    //         const newHtml = '<span>' + html.substring(0, startPos) + '<i class=\"touched\">' + selectedWord + '</i>' + ' ' + html.substring(startPos + selectedWord.length) + '</span>';
+    //         p.innerHTML = '';
+    //         p.innerHTML = newHtml;
+    //     }
+    // })
 }
 
 function openMain() {
