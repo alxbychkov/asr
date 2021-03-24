@@ -22,9 +22,11 @@
         }
 
         .media__elisa {
-            top: -95%;
-            left: -150px;
-            transform: scale(0.41);
+            top: -32%;
+            left: -16px;
+            // top: -95%;
+            // left: -150px;
+            // transform: scale(0.41);
         }
     }
 }
@@ -52,11 +54,19 @@
         }
 
         .media__elisa {
+            svg {
+                // width: 189px !important;
+                // height: 362px !important;
+                width: 252px !important;
+                height: 416px !important;
+            }
             position: absolute;
             z-index: -1;
-            top: -57%;
-            left: -275px;
-            transform: scale(0.44);
+            top: 4%;
+            left: -145px;
+            // top: -57%;
+            // left: -275px;
+            // transform: scale(0.44);
             transition: .7s;
         }
     }
