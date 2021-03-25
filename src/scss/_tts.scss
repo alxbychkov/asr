@@ -22,9 +22,33 @@
             font-size: 16px;
             line-height: 23px;
             padding: 20px;
+            outline: none;
+            border-radius: 6px;
 
             &::placeholder {
+                font-family: 'Jost', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 23px;
                 color: rgba(22, 25, 59, 0.4);
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #FFFFFF;
+                border: 1px solid rgba(70, 156, 183, 0.5);
+                box-sizing: border-box;
+                box-shadow: 0px 19px 65px -11px rgba(6, 33, 39, 0.08);
+                border-radius: 6px;
+            }
+            
+            &::-webkit-scrollbar-track {
+                background-color: transparent;
+                height: 100px;
+            }
+    
+            &::-webkit-scrollbar {
+                width: 12px;
             }
         }
 
@@ -34,10 +58,22 @@
             top: 20px;
             left: -110px;
             transition: .7s;
+            display: none;
         }
         .asr__heands {
             position: absolute;
             display: none;
+        }
+        .media__elisa {
+            svg {
+                width: 252px !important;
+                height: 376px !important;
+            }
+            position: absolute;
+            z-index: -1;
+            top: 1%;
+            left: -142px;
+            transition: .7s;
         }
 
     }
@@ -47,6 +83,7 @@
         border: 1px solid rgba(70, 156, 183, 0.2);
         border-radius: 6px;
         padding: 51px 31px 48px;
+        box-shadow: 0px 19px 65px -11px rgba(6, 33, 39, 0.08);
 
         .tts__header {
             display: flex;
@@ -95,6 +132,14 @@
     .elisa .asr__girl {
         top: -39px;
         left: -95px;
+    }
+
+    .media__elisa {
+        svg {
+            height: 350px !important;
+        }
+        top: -27%;
+        left: -128px;
     }
 
     .tts-sidebar {

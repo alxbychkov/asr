@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    padding-right: 19px;
 
     .asr-filter__input::placeholder {
         font-family: 'Jost', sans-serif;
@@ -15,6 +16,7 @@
     .asr-filter__input {
         flex: 1;
         margin-right: 10px;
+        outline: none;
     }
     .asr-filter__input,
     .asr-filter__btn {
@@ -36,6 +38,11 @@
         &:hover,
         &:active {
             border-color: #469CB7;
+            color: #16193B;
+        }
+
+        &:disabled {
+            color: rgba(22, 25, 59, 0.4);
         }
     }
 

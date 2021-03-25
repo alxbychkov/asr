@@ -18,6 +18,19 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 23px;
+
+    .nav__item {
+        transition: .3s;
+
+        &:hover {
+            color: rgba(70, 156, 183, 0.8);
+        }
+
+        &:active,
+        &:focus {
+            color: rgba(70, 156, 183, 1);
+        }
+    }
 }
 
 .nav__item:not(:last-child) {

@@ -4,8 +4,9 @@
     }
 
     .asr_content__item.leftside {
-        width: 36%;
+        width: 32%;
         margin-top: 0;
+        margin-right: 10px;
 
         .asr {
             margin-top: 0;
@@ -18,15 +19,17 @@
         }
 
         .asr .asr__heands {
-            display: block;
+            // display: block;
+           transform: scale(1);
         }
 
         .media__elisa {
-            top: -32%;
-            left: -16px;
-            // top: -95%;
-            // left: -150px;
-            // transform: scale(0.41);
+            top: -28%;
+            left: -27px;
+            opacity: .7;
+            svg {
+                height: 355px !important;
+            }
         }
     }
 }
@@ -47,10 +50,12 @@
         }
 
         .asr .asr__heands {
-            display: none;
+            // display: none;
             position: absolute;
             top: -8px;
             left: 45px;
+            transform: scale(0);
+            transition-delay: .7s;
         }
 
         .media__elisa {
@@ -89,6 +94,7 @@
         width: 68%;
         overflow: hidden;
         transition: .7s;
+        margin-right: -12px;
     }
 
     .asr_content__body {

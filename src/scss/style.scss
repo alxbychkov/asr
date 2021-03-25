@@ -51,7 +51,8 @@ ul {
     transition: .3s;
 
     .media__elisa {
-        display: none;
+        // display: none;
+
     }
 }
 
@@ -66,6 +67,7 @@ ul {
         overflow-y: auto;
         height: 100%;
         padding-right: 7px;
+        margin-right: -19px;
 
         &::-webkit-scrollbar-thumb {
             background: #FFFFFF;

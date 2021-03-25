@@ -108,6 +108,7 @@
 
             .codec__values {
                 display: flex;
+                flex-wrap: wrap;
 
                 .codec__value:not(:last-child) {
                     margin-right: 15px;
@@ -118,7 +119,7 @@
                     border: 1px solid rgba(70, 156, 183, 0.2);
                     background: #FFFFFF;
                     border-radius: 6px;
-                    padding: 10px;
+                    padding: 11px;
                     color: rgba(22, 25, 59, 0.6);
                     font-family: 'Jost', sans-serif;
                     font-style: normal;
@@ -127,11 +128,18 @@
                     line-height: 23px;
                     text-align: center;
                     cursor: pointer;
+                    outline: none;
+
+                    &:not(.active):hover {
+                        border: 2px solid rgba(70, 156, 183, 0.8);
+                        padding: 10px;
+                    }
                 }
 
                 .codec__value.active {
                     border: 2px solid rgba(70, 156, 183, 0.8);
                     color: #16193B;
+                    padding: 10px;
                 }
             }
         }
@@ -145,6 +153,6 @@
     }
 
     .asr__heands {
-        display: none;
+        // display: none;
     }
 }
